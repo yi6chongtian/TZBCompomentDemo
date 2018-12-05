@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FEC8970862C649FD0CE3EBD /* libPods-TZBCompomentDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5034B447BE9D56EE3F7063B /* libPods-TZBCompomentDemo.a */; };
 		8106C87321B7B8E20066A291 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8106C87221B7B8E20066A291 /* AppDelegate.m */; };
 		8106C87621B7B8E20066A291 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8106C87521B7B8E20066A291 /* ViewController.m */; };
 		8106C87921B7B8E20066A291 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8106C87721B7B8E20066A291 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29648FDA5C7976A367EAF33F /* Pods-TZBCompomentDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TZBCompomentDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TZBCompomentDemo/Pods-TZBCompomentDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6BAA1146B5BCA30059AB9D96 /* Pods-TZBCompomentDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TZBCompomentDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TZBCompomentDemo/Pods-TZBCompomentDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8106C86E21B7B8E20066A291 /* TZBCompomentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TZBCompomentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8106C87121B7B8E20066A291 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8106C87221B7B8E20066A291 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		8106C87D21B7B8E30066A291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8106C87F21B7B8E30066A291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8106C88021B7B8E30066A291 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C5034B447BE9D56EE3F7063B /* libPods-TZBCompomentDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TZBCompomentDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FEC8970862C649FD0CE3EBD /* libPods-TZBCompomentDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FEA9491504E1B98040931AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BAA1146B5BCA30059AB9D96 /* Pods-TZBCompomentDemo.debug.xcconfig */,
+				29648FDA5C7976A367EAF33F /* Pods-TZBCompomentDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8106C86521B7B8E20066A291 = {
 			isa = PBXGroup;
 			children = (
 				8106C87021B7B8E20066A291 /* TZBCompomentDemo */,
 				8106C86F21B7B8E20066A291 /* Products */,
+				6FEA9491504E1B98040931AF /* Pods */,
+				D373DB262AB22CB0A41D59EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +87,14 @@
 			path = TZBCompomentDemo;
 			sourceTree = "<group>";
 		};
+		D373DB262AB22CB0A41D59EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5034B447BE9D56EE3F7063B /* libPods-TZBCompomentDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8106C88421B7B8E30066A291 /* Build configuration list for PBXNativeTarget "TZBCompomentDemo" */;
 			buildPhases = (
+				C219D21BF3AF0BC9D4AC80F3 /* [CP] Check Pods Manifest.lock */,
 				8106C86A21B7B8E20066A291 /* Sources */,
 				8106C86B21B7B8E20066A291 /* Frameworks */,
 				8106C86C21B7B8E20066A291 /* Resources */,
@@ -135,6 +160,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C219D21BF3AF0BC9D4AC80F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TZBCompomentDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8106C86A21B7B8E20066A291 /* Sources */ = {
@@ -283,14 +329,12 @@
 		};
 		8106C88521B7B8E30066A291 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BAA1146B5BCA30059AB9D96 /* Pods-TZBCompomentDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TZBCompomentDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yz.app.TZBCompomentDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,14 +343,12 @@
 		};
 		8106C88621B7B8E30066A291 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29648FDA5C7976A367EAF33F /* Pods-TZBCompomentDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TZBCompomentDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yz.app.TZBCompomentDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
