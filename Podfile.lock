@@ -1,0 +1,21 @@
+PODS:
+  - TZBServer (1)
+
+DEPENDENCIES:
+  - TZBServer (from `https://github.com/yi6chongtian/TZBServer.git`)
+
+EXTERNAL SOURCES:
+  TZBServer:
+    :git: https://github.com/yi6chongtian/TZBServer.git
+
+CHECKOUT OPTIONS:
+  TZBServer:
+    :commit: 27f171450e5d9d34019c82cca7b346f9238fbfa3
+    :git: https://github.com/yi6chongtian/TZBServer.git
+
+SPEC CHECKSUMS:
+  TZBServer: bb752eda0444957af43a7d6e71424c40c01850aa
+
+PODFILE CHECKSUM: 5b06528dd33f8f73fb78a9a9cf635c859eb00d19
+
+COCOAPODS: 1.5.0
